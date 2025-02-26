@@ -1,4 +1,4 @@
-# boteka-assessment
+# prime-assessment
 
 **Get Started**
 
