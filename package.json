@@ -1,0 +1,33 @@
+{
+  "name": "boteka-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open-cypress-runner": "npx cypress open --config-file cypress.config.js ",
+    "run-all-tests": "npx cypress run --config-file cypress.config.js",
+    "clean-reports": "rimraf cypress/reports && rimraf cypress/screenshots",
+    "run-all-tests-and-create-clean-reports": "npm run clean-reports && npm run run-all-tests",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "cypress": "^14.0.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^15.14.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^5.0.5"
+  }
+}
